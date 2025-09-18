@@ -46,16 +46,15 @@ int insertion()
     else
     {
         rare = rare + 1;
-        front = 0;    
-        printf("->");    
+        front = 0;
+        printf("->");
         scanf("%d", &queue[rare]);
     }
-    
+
     for (int i = front; i <= rare; i++)
     {
-        printf("%d\n",queue[i]);
-    } 
-
+        printf("%d\n", queue[i]);
+    }
 }
 
 int deletion()
@@ -69,9 +68,9 @@ int deletion()
         item = queue[front];
         for (int i = front + 1; i < 5; i++)
         {
-            printf("%d\n",queue[i]);
+            printf("%d\n", queue[i]);
         }
-        printf("deleted item is > %d\n",item);
+        printf("deleted item is > %d\n", item);
 
         front = front + 1;
     }
@@ -81,6 +80,6 @@ void traversal()
 {
     for (int i = front; i <= rare; i++)
     {
-        printf("%d\n",queue[i]);
-    }    
+        printf("%d\n", queue[i]);
+    }
 }
